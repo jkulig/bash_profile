@@ -37,15 +37,6 @@ bldpur='\e[1;35m' # Purple
 bldcyn='\e[1;36m' # Cyan  
 bldwht='\e[1;37m' # White  
   
-unkblk='\e[4;30m' # Black - Underline  
-undred='\e[4;31m' # Red  
-undgrn='\e[4;32m' # Green  
-undylw='\e[4;33m' # Yellow  
-undblu='\e[4;34m' # Blue  
-undpur='\e[4;35m' # Purple  
-undcyn='\e[4;36m' # Cyan  
-undwht='\e[4;37m' # White  
-  
 bakblk='\e[40m'   # Black - Background  
 bakred='\e[41m'   # Red  
 badgrn='\e[42m'   # Green  

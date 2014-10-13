@@ -1,4 +1,4 @@
-export PATH=~/bin:$PATH 
+export PATH=~/bin:$PATH
 
 # Prompt set up
 print_before_the_prompt () {  
@@ -10,12 +10,17 @@ PS1='-> '
 # Aliases and custom functions
 alias dev='cd ~/Dev/www/'
 alias up='cd ..'
+alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'" # tree directory view
+alias cachecl='rm -rf var/cache/*'
 function subl(){ 
   open -a /Applications/'Sublime Text.app' $1 
 }
 function dockspace() {
   defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}';
   killall Dock;
+}
+function browserstack() {
+  java -jar ~/bin/BrowserStackTunnel.jar pvMSzKjCa5guc2sgBNHQ $1,80,0;
 }
 
 # Colors
@@ -36,6 +41,15 @@ bldblu='\e[1;34m' # Blue
 bldpur='\e[1;35m' # Purple  
 bldcyn='\e[1;36m' # Cyan  
 bldwht='\e[1;37m' # White  
+  
+unkblk='\e[4;30m' # Black - Underline  
+undred='\e[4;31m' # Red  
+undgrn='\e[4;32m' # Green  
+undylw='\e[4;33m' # Yellow  
+undblu='\e[4;34m' # Blue  
+undpur='\e[4;35m' # Purple  
+undcyn='\e[4;36m' # Cyan  
+undwht='\e[4;37m' # White  
   
 bakblk='\e[40m'   # Black - Background  
 bakred='\e[41m'   # Red  
